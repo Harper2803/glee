@@ -189,6 +189,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
+
     li{
       button{
         @extend %rubik-500;
@@ -202,6 +203,7 @@
         line-height: 9px;
         margin-right: 10px;
       }
+
       &.slick-active{
         button{
           background-color: #fff;
@@ -212,6 +214,61 @@
   }
 }
 
+.features{
+  &__items{
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item{
+    border-right: 1px solid #e8e4df;
+    padding: 50px 145px 30px 150px;
+    position: relative;
+  }
+  
+  &__item:last-child{
+    border-right: none;
+  }
+
+  &__item--support::before{
+    content: url('../images/icon/support-icon.svg');
+    position: absolute;
+    left: 80px;
+    top: 63px;
+  }
+  
+  &__item--truck::before{
+    content: url('../images/icon/truck-icon.svg');
+    position: absolute;
+    left: 80px;
+    top: 63px;
+  }
+
+  &__item--secure::before{
+    content: url('../images/icon/secure-icon.svg');
+    position: absolute;
+    left: 80px;
+    top: 63px;
+  }
+
+  &__title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__text{
+    @extend %dmsans-400;
+    color: #585858;
+    max-width: 220px;
+  }
+}
+
+// features__item--support
+// features__item--truck
+// features__item--secure
 
 
 

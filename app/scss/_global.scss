@@ -21,3 +21,9 @@ a{
   text-align: center;
   color: $link;
 }
+.title{
+  @extend %dmsans-700;
+  font-size: 36px;
+  text-align: center;
+  color: $title;
+}
