@@ -266,19 +266,16 @@
   }
 }
 
-// features__item--support
-// features__item--truck
-// features__item--secure
-
-
-
-
-
-
-
-
-
-
+.video{
+  background-image: url('../images/video-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 501px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
