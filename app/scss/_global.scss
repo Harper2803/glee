@@ -4,6 +4,7 @@ body{
 }
 
 body{
+  @extend %rubik-400;
   font-size: 16px;
   line-height: 30px;
   color: $deffault;
@@ -16,11 +17,19 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.container-content{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 a{
   font-size: 14px;
   text-align: center;
   color: $link;
 }
+
 .title{
   @extend %dmsans-700;
   font-size: 36px;
