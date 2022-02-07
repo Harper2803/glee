@@ -389,6 +389,53 @@
   }
 }
 
+.product-design{
+  padding-bottom: 120px;
+  &__title{
+    margin-bottom: 30px;
+  }
+  &__buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__button{
+    @extend %dmsans-700;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: #8b8b8b;
+  }
+  &__button + .product-design__button{
+    margin-left: 30px;
+  }
+  &__items{
+    display: grid;
+    min-height: 526px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 30px;
+  }
+  &__item{
+    background-repeat: no-repeat;
+  }
+  &__subtitle{
+    @extend %dmsans-700;
+    font-size: 20px;
+    color: $title;
+    max-width: 210px;
+    margin-bottom: 20px;
+    padding: 40px 0 0 35px;
+  }
+  &__text{
+    @extend %dmsans-700;
+    color: $btn;
+    padding-left: 35px;
+  }
+  .mixitup-control-active{
+    color: $title;
+  }
+}
 
 
 
