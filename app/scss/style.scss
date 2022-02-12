@@ -604,10 +604,39 @@
 
 .login__partners{
   background-color: rgb(252, 215, 182, 0.2);
-  margin-bottom: 55px;height: 251px;
+  margin-bottom: 55px;
+  height: 251px;
 }
 
+.container__terms-conditions{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
+.terms-conditions{
+  padding: 115px 0;
+  &__item{
+    margin-bottom: 60px;
+  }
+  &__title{
+    @extend %rubik-500;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  &__list{
+    list-style: none;
+    counter-reset: my-counter;
+  }
+  &__list-item{
+    margin-bottom: 30px;
+    counter-increment: my-counter;
+  }
+  &__list-item::before{
+    content: '0' counter(my-counter) '.';
+  }
+}
 
 
 
