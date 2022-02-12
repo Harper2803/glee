@@ -11,6 +11,7 @@
     align-items: center;
   }
 }
+
 .menu{
   &__list{
     display: flex;
@@ -26,6 +27,7 @@
     color: $info;
   }
 }
+
 .main{
   flex-grow: 1;
 }
@@ -260,6 +262,7 @@
     color: $title;
   }
 }
+
 .product-info{
   padding: 175px 0 100px;
   &__items{
@@ -499,7 +502,6 @@
     padding: 10px 17px;
     background-color: #a3bbc8;
     color: #fff;
-    cursor: pointer;
   }
   &__link{
     line-height: 32px;
@@ -524,6 +526,87 @@
     border-right: none;
   }
 }
+
+//Login page
+
+.top{
+  color: #222933;
+  padding: 30px 0;
+  text-align: center;
+  background-color: #edf1f4;
+  &__title{
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.login{
+  padding: 115px 0px;
+  width: 470px;
+  margin: 0 auto;
+  &__label{
+    @extend %rubik-400;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: $info;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    margin-top: 8px;
+  }
+  &__btn{
+    @extend %rubik-500;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    color: #fffefe;
+    text-align: center;
+    background-color: $btn;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    padding: 13px 5px;
+  }
+  &__error{
+    @extend %rubik-400;
+    color: $info;
+    float: right;
+  }
+  &__link{
+    display: block;
+    color: $info;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    position: relative;
+  }
+  &__link::after{
+    content: url('../images/login-border.svg');
+    position: absolute;
+    top: -40px;
+    left: 0;
+  }
+  &__create-btn{
+    @extend %rubik-500;
+    width: 100%;
+    padding: 13px 5px;
+    font-size: 18px;
+    color: $deffault;
+    border: 2px solid $btn;
+    background-color: #fff;
+  }
+}
+
+.login__partners{
+  background-color: rgb(252, 215, 182, 0.2);
+  margin-bottom: 55px;height: 251px;
+}
+
 
 
 
