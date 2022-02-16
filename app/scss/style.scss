@@ -378,6 +378,7 @@
   }
   &__title{
     margin-bottom: 45px;
+    color: $deffault;
   }
   &__link{
     @extend %dmsans-700;
@@ -638,9 +639,194 @@
   }
 }
 
+.about{
+  padding: 100px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img{
+    margin-right: 45px;
+  }
+  &__info{
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__number{
+    @extend %rubik-700;
+    font-size: 140px;
+    line-height: 32px;
+    margin-right: 30px;
+    padding-top: 85px;
+    color: $btn;
+  }
+  &__box{
+    padding-top: 70px;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    color: $deffault;
+  }
+  &__text{
+    margin-bottom: 65px;
+    max-width: 555px;
+  }
+  &__benefits{
+    position: relative;
+    &::before{
+      content: url('../images/about-border.jpg');
+    }
+  }
+  &__benefits-items{
+    display: flex;
+    margin-left: 60px;
+  }
+  &__benefits-item{
+    position: relative;
+    padding-right: 120px;
+    margin-top: 30px;
+    &::after{
+      content: url('../images/about-border-right.png');
+      top: -10px;
+      left: 115px;
+      position: absolute;
+    }
+    &:last-child::after{
+      display: none;
+    }
+    &::before{
+      top: 8px;
+      left: -60px;
+      position: absolute;
+    }
+  }
+  &__benefits-item--projects::before{
+    content: url('../images/icon/about-icon-1.svg');
+  }
+  &__benefits-item--revenue::before{
+    content: url('../images/icon/about-icon-2.svg');  
+  }
+  &__benefits-item--awards::before{
+    content: url('../images/icon/about-icon-3.svg');
+  }
+  &__benefits-num{ 
+   @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 38px;
+    color: $deffault;
+  }
+  &__benefits-text{
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #4c4c4c;
+    line-height: 17px;
+  }
+}
 
+.about__features{
+  background-color: #fcd7b6;
+  margin-bottom: 110px;
+  &-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0;
+  }
+  &-item{
+    @extend %dmsans-700;
+    color: $deffault;
+  }
+  &-imgbox{
+    display: flex;
+    justify-content: center;
+    min-height: 64px;
+    margin-bottom: 20px;
+  }
+  &-num{
+    font-size: 36px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &-text{
+    text-align: center;
+  }
+}
 
-
+.team{
+  margin-bottom: 95px;
+  &__inner{
+    display: flex;
+  }
+  &__info{
+    margin-right: 100px;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    color: $deffault;
+  }
+  &__text{
+    max-width: 305px;
+    margin-bottom: 30px;
+  }
+  &__link{
+    @extend %poppins-600;
+    font-size: 15px;
+    line-height: 55px;
+    border-radius: 5px;
+    padding: 15px 55px 15px 15px;
+    color: #fff;
+    background-color: $btn;
+    position: relative;
+  }
+  &__link::after{
+    content: url('../images/icon/about-right.svg');
+    position: absolute;
+    top: -2px;
+    right: 25px;
+  }
+  &__items{
+    min-height: 740px;
+    min-width: 770px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+  }
+  &__item{
+    background-repeat: no-repeat;
+  }
+  &__item-box{
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    max-width: 325px;
+    margin-top: 270px;
+    position: relative;
+  }
+  &__name{
+    @extend %dmsans-700;
+    font-size: 22px;
+    line-height: 26px;
+    color: $info;
+  }
+  &__position{
+    color: #565872;
+    display: inline-block;
+  }
+  &__link-iconbox{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+  }
+  &__link-img{
+    display: inline-block;
+  }
+}
 
 
 
