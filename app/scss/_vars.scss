@@ -5,6 +5,14 @@ $info: #436372;
 $link: #7b7b7b;
 $blog: #262626;
 
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 %dmsans-700{
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
