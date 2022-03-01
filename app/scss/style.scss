@@ -1074,6 +1074,152 @@
   }
 }
 
+.contact{
+  padding: 120px 0;
+  &__text{
+    @extend %poppins-700;
+    color: $btn;
+    line-height: 20px;
+    text-align: center;
+  }
+  &__title{
+    @extend %dmsans-700;
+    color: $info;
+    font-size: 35px;
+    line-height: 57px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    text-align: center;
+    padding: 65px 0 65px 0;
+    width: 370px;
+    background-color: #fbfbfb;
+    margin-bottom: 120px;
+    &:hover{
+      border: 2px solid $btn;
+      .contact__item-icon{
+        background-color: $btn;
+        path{
+          fill: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+  &__item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  }
+  &__item-subtitle{
+    @extend %dmsans-700;
+    color: #222;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+  &__item-address{
+    color: $contact;
+    max-width: 170px;
+    margin: 0 auto;
+  }
+  &__link-box{
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  &__link-email,
+  &__link-phone{
+    font-size: 16px;
+    color: $contact;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form{
+    max-width: 620px;
+  }
+  &__form-input{
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    padding: 0 40px 0 20px;
+    border: none;
+    background-color: #fafafa;
+    margin-bottom: 25px;
+    &::placeholder{
+      @extend %rubik-400;
+      color: $contact;
+    }
+  }
+  &__form-input--user{
+    background-image: url('../images/icon/contact-user-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 260px center;
+  }
+  &__form-input--mail{
+    background-image: url('../images/icon/contact-mail-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 255px center;
+    padding: 0px 46px 0 20px;
+  }
+  &__form-textarea--message{
+    background-image: url('../images/icon/contact-message-icon.svg');
+    background-repeat: no-repeat;
+    background-position: top 20px right 25px;
+  }
+  &__form-textarea{
+    width: 620px;
+    height: 175px;
+    padding: 17px 20px;
+    background-color: #fafafa;
+    border: none;
+    resize: none;
+    margin-bottom: 30px;
+    &::placeholder{
+      @extend %rubik-400;
+      color: $contact;
+      text-transform: uppercase;
+    }
+  }
+  &__form-button{
+    @extend %poppins-600;
+    border-radius: 5px;
+    background-color: $btn;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    &::placeholder{
+      @extend %rubik-400;
+      color: $contact;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.contact__form-input + .contact__form-input{
+  margin-left: 16px;
+}
+
+#map{
+  width: 500px;
+  height: 335px;
+}
+
+
+
 
 
 
