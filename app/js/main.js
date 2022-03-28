@@ -1,5 +1,32 @@
 $(function(){
-
+  $('.product-detalis__form-input').styler();
+  $('.related__product').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    VariableWidth: true,
+    draggable: false
+  });
+  $('.product-tabs__link').on('click', function(e){
+    e.preventDefault();
+    $('.product-tabs__link').removeClass('product-tabs__link--active');
+    $(this).addClass('product-tabs__link--active');
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+  })
+  $('.product-detalis__thumb').slick({
+    asNavFor: '.product-detalis__big',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    draggable: false,
+    vertical: true
+  });
+  $('.product-detalis__big').slick({
+    asNavFor: '.product-detalis__thumb',
+    arrows: false,
+    fade: true,
+    draggable: false
+  });
   $('.product-recent__star').rateYo({
     starWidth: '11px',
     ratedFill: '#ffc000',
